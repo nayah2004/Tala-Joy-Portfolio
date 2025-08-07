@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0d0228;
+    color: white;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height:100%;
+    /* z-index: 100; */
+}
+
+.nav-container{
+     display:flex;
+     justify-content:left;
+     width: 200px;
+     padding:0px;
+     margin:0px;
+     font-weight: 400px;
+     font-style:initial ;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #0d0228;
+    height: 100%; 
+    position: fixed;
+    overflow: auto
+}
+
+.nav-links li a{
+     display: block;
+     color: #f8f6f6;
+     padding: 8px 16px;
+}
+
+.nav-links a:hover{
+color:white;
+background-color: #c2a83a;
+border-radius: 5px;
+padding: 10px;
+}
+
+/* Head */
+h1{
+    margin: 20px 300px;
+    gap:30px;
+    padding: 0px;
+    color:rgb(3, 21, 37)
+}
+
+/* Picture Dropdown */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown1 img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  .dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown1-content img{
+    border-radius: 0;
+    width: 400px;
+    height: 300px;
+  }
+  
+  .dropdown1:hover .dropdown1-content {
+    display: block;
+  }
+  
+  .descrip {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .head{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .dropdown1{
+    align-content: center;
+    top:20px;
+    margin-left: 165px;
+    border-radius: 5px;
+  }
+
+  /* Skills Section */
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-layer{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0.6)), url('Background2.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.content{
+    animation: fadeInBody 2.5s ease-in;
+}
+
+@keyframes fadeInBody{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap:20px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    margin-left: 300px;
+}
+
+.center-photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #c2a83a;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.center-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill-box{
+    width: 200px;
+    padding: 15px;
+    background-color: #ffffffd9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover{
+    transform: translateY(-10px) scale(2.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-box img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.skill-title{
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, mimax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}

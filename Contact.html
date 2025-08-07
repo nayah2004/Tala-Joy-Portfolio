@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container"> 
+         <ul class="nav-links">
+            <li><a href="Portfolio.html">Home</a></li>
+            <li> <a href="biography.html">Biography</a>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+            <li><a href="#cart" class="cart-icon">🛒</a></li>
+         </ul>  
+        </div>
+     </nav>
+
+     <!-- Form -->
+<form class = "contact-form" action="mailto:your-nayahjoy@gmail.com" method="POST" enctype="text/plain">
+    <h2> CONTACT ME</h2>
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" rows="10" placeholder="Your Message" required> </textarea>
+        <button type="submit"> Send Message</button>
+</form>
+    
+</body>
+</html>
